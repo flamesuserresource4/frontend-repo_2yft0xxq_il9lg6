@@ -6,13 +6,13 @@ import CTA from './components/CTA';
 
 function App() {
   return (
-    <div className="min-h-screen bg-[#0a0a0a]">
+    <div className="min-h-screen bg-white" style={{fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif'}}>
       <Hero />
       <Features />
       <Product />
       <CTA />
-      <footer className="border-t border-white/10 bg-[#0a0a0a] py-6 text-center text-xs text-white/50">
-        © {new Date().getFullYear()} LAIKS — Luxembourg AI Key Solutions. All rights reserved.
+      <footer className="border-t border-black/10 bg-white py-6 text-center text-xs text-black/50">
+        © {new Date().getFullYear()} LAIKS — Luxembourg AI Key Solutions
       </footer>
     </div>
   );
