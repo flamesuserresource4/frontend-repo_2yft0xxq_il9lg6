@@ -3,7 +3,7 @@ import Spline from '@splinetool/react-spline';
 
 const Hero = () => {
   return (
-    <section className="relative w-full bg-[#f7f7f5] text-[#0a0a0a]">
+    <section className="relative w-full bg-white text-[#0a0a0a]">
       <header className="mx-auto flex w-full max-w-6xl items-center justify-between px-6 py-6">
         <div className="text-sm tracking-[0.22em]">LAIKS</div>
         <nav className="hidden gap-6 text-sm md:flex">
@@ -16,8 +16,8 @@ const Hero = () => {
       <div className="mx-auto grid w-full max-w-6xl items-center gap-10 px-6 pb-20 pt-6 md:min-h-[78vh] md:grid-cols-2">
         <div className="order-2 md:order-1">
           <h1 className="text-balance text-4xl font-medium leading-tight md:text-5xl" style={{fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif'}}>
-            Bureaucracy, refined.
-            <span className="block text-black/60">Autonomous document handling for fiduciaries in Luxembourg.</span>
+            Quiet document intelligence.
+            <span className="block text-black/60">Autonomous handling for fiduciaries in Luxembourg.</span>
           </h1>
           <p className="mt-4 max-w-xl text-pretty text-black/60" style={{fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif'}}>
             Sort. Read. Analyse. Validate. A precise system that works quietly in the background and elevates your practice.

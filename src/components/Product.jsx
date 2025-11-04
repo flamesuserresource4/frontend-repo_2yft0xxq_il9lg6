@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 
 const steps = [
   { title: 'Ingest', desc: 'Securely connect storage or drag-and-drop documents.' },
@@ -17,11 +18,18 @@ const Product = () => {
         </div>
 
         <div className="grid gap-6 md:grid-cols-4">
-          {steps.map((s) => (
-            <div key={s.title} className="rounded-xl border border-black/10 bg-white p-6">
+          {steps.map((s, idx) => (
+            <motion.div
+              key={s.title}
+              className="rounded-xl border border-black/10 bg-white p-6"
+              initial={{ opacity: 0, y: 8 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true, amount: 0.2 }}
+              transition={{ duration: 0.24, ease: 'easeOut', delay: idx * 0.05 }}
+            >
               <div className="text-sm font-medium" style={{fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif'}}>{s.title}</div>
               <p className="mt-2 text-sm text-black/60" style={{fontFamily: 'Helvetica Neue, Helvetica, Arial, sans-serif'}}>{s.desc}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>
